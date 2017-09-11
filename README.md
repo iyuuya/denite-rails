@@ -19,6 +19,7 @@ Denite rails:helper
 Denite rails:test
 Denite rails:spec
 Denite rails:ability
+Denite rails:validator
 ```
 
 ## Keymap examples
