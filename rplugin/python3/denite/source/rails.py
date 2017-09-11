@@ -23,6 +23,7 @@ from test_finder import TestFinder # noqa
 from spec_finder import SpecFinder # noqa
 from ability_finder import AbilityFinder # noqa
 from validator_finder import ValidatorFinder # noqa
+from decorator_finder import DecoratorFinder # noqa
 
 
 class Source(Base):
@@ -89,6 +90,8 @@ class Source(Base):
             finder_class = AbilityFinder
         elif target == 'validator':
             finder_class = ValidatorFinder
+        elif target == 'decorator':
+            finder_class = DecoratorFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
