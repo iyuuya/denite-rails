@@ -26,6 +26,7 @@ Denite rails:asset
 Denite rails:service
 Denite rails:form
 Denite rails:serializer
+Denite rails:config
 ```
 
 ## Keymap examples
