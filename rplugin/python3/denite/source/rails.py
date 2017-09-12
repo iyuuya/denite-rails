@@ -26,6 +26,7 @@ from validator_finder import ValidatorFinder # noqa
 from decorator_finder import DecoratorFinder # noqa
 from mailer_finder import MailerFinder # noqa
 from asset_finder import AssetFinder # noqa
+from service_finder import ServiceFinder # noqa
 
 
 class Source(Base):
@@ -98,6 +99,8 @@ class Source(Base):
             finder_class = MailerFinder
         elif target == 'asset':
             finder_class = AssetFinder
+        elif target == 'service':
+            finder_class = ServiceFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)

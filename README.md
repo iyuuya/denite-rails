@@ -23,6 +23,7 @@ Denite rails:validator
 Denite rails:decorator
 Denite rails:mailer
 Denite rails:asset
+Denite rails:service
 ```
 
 ## Keymap examples
