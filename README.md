@@ -24,6 +24,7 @@ Denite rails:decorator
 Denite rails:mailer
 Denite rails:asset
 Denite rails:service
+Denite rails:form
 ```
 
 ## Keymap examples

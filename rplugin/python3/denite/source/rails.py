@@ -27,6 +27,7 @@ from decorator_finder import DecoratorFinder # noqa
 from mailer_finder import MailerFinder # noqa
 from asset_finder import AssetFinder # noqa
 from service_finder import ServiceFinder # noqa
+from form_finder import FormFinder # noqa
 
 
 class Source(Base):
@@ -101,6 +102,8 @@ class Source(Base):
             finder_class = AssetFinder
         elif target == 'service':
             finder_class = ServiceFinder
+        elif target == 'form':
+            finder_class = FormFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
