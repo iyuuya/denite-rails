@@ -5,7 +5,7 @@ from asset_file import AssetFile
 
 class AssetFinder:
 
-    GLOB_PATTERN = 'app/assets/**/*.rb'
+    GLOB_PATTERN = 'app/assets/**/*'
 
     def __init__(self, context):
         self.context = context
@@ -13,4 +13,4 @@ class AssetFinder:
 
     def find_files(self):
         files = finder_utils.glob_project(self.root_path, self.GLOB_PATTERN)
-        return [AbilityFile(filename) for filename in files]
+        return [AssetFile(filename) for filename in files]
