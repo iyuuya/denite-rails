@@ -113,6 +113,8 @@ class Source(Base):
             finder_class = ConfigFinder
         elif target == 'attribute'
             finder_class = AttributeFinder
+        elif target == 'policy'
+            finder_class = PolicyFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
