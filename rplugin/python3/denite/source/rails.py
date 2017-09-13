@@ -30,7 +30,9 @@ from service_finder import ServiceFinder # noqa
 from form_finder import FormFinder # noqa
 from serializer_finder import SerializerFinder # noqa
 from config_finder import ConfigFinder # noqa
-from attribute_finder Import AttributeFinder # noqa
+from attribute_finder import AttributeFinder # noqa
+from policy_finder import PolicyFinder
+from loyalty_finder import LoyaltyFinder
 
 
 class Source(Base):
@@ -111,11 +113,11 @@ class Source(Base):
             finder_class = SerializerFinder
         elif target == 'config':
             finder_class = ConfigFinder
-        elif target == 'attribute'
+        elif target == 'attribute':
             finder_class = AttributeFinder
-        elif target == 'policy'
+        elif target == 'policy':
             finder_class = PolicyFinder
-        elif target == 'loyalty'
+        elif target == 'loyalty':
             finder_class = LoyaltyFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
