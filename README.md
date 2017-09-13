@@ -27,6 +27,7 @@ Denite rails:service
 Denite rails:form
 Denite rails:serializer
 Denite rails:config
+Denite rails:attribute
 ```
 
 ## Keymap examples

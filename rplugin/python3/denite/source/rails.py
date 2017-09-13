@@ -30,6 +30,7 @@ from service_finder import ServiceFinder # noqa
 from form_finder import FormFinder # noqa
 from serializer_finder import SerializerFinder # noqa
 from config_finder import ConfigFinder # noqa
+from attribute_finder Import AttributeFinder # noqa
 
 
 class Source(Base):
@@ -110,6 +111,8 @@ class Source(Base):
             finder_class = SerializerFinder
         elif target == 'config':
             finder_class = ConfigFinder
+        elif target == 'attribute'
+            finder_class = AttributeFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
