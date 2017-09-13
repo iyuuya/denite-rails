@@ -30,6 +30,7 @@ Denite rails:config
 Denite rails:attribute
 Denite rails:policy
 Denite rails:loyalty
+Denite rails:domain
 ```
 
 ## Keymap examples

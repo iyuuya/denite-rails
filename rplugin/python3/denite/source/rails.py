@@ -33,6 +33,7 @@ from config_finder import ConfigFinder # noqa
 from attribute_finder import AttributeFinder # noqa
 from policy_finder import PolicyFinder
 from loyalty_finder import LoyaltyFinder
+from domain_finder import DomainFinder
 
 
 class Source(Base):
@@ -119,6 +120,8 @@ class Source(Base):
             finder_class = PolicyFinder
         elif target == 'loyalty':
             finder_class = LoyaltyFinder
+        elif target == 'domain':
+            finder_class = DomainFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
