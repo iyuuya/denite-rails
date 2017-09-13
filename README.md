@@ -29,6 +29,7 @@ Denite rails:serializer
 Denite rails:config
 Denite rails:attribute
 Denite rails:policy
+Denite rails:policy
 ```
 
 ## Keymap examples

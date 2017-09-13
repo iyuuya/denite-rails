@@ -115,6 +115,8 @@ class Source(Base):
             finder_class = AttributeFinder
         elif target == 'policy'
             finder_class = PolicyFinder
+        elif target == 'loyalty'
+            finder_class = LoyaltyFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
