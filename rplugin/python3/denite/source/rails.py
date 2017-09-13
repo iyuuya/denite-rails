@@ -20,6 +20,22 @@ from controller_finder import ControllerFinder # noqa
 from helper_finder import HelperFinder # noqa
 from view_finder import ViewFinder # noqa
 from test_finder import TestFinder # noqa
+from spec_finder import SpecFinder # noqa
+from ability_finder import AbilityFinder # noqa
+from validator_finder import ValidatorFinder # noqa
+from decorator_finder import DecoratorFinder # noqa
+from mailer_finder import MailerFinder # noqa
+from asset_finder import AssetFinder # noqa
+from service_finder import ServiceFinder # noqa
+from form_finder import FormFinder # noqa
+from serializer_finder import SerializerFinder # noqa
+from config_finder import ConfigFinder # noqa
+from attribute_finder import AttributeFinder # noqa
+from policy_finder import PolicyFinder
+from loyalty_finder import LoyaltyFinder
+from domain_finder import DomainFinder
+from query_finder import QueryFinder
+from factory_finder import FactoryFinder
 
 
 class Source(Base):
@@ -80,6 +96,38 @@ class Source(Base):
             finder_class = ViewFinder
         elif target == 'test':
             finder_class = TestFinder
+        elif target == 'spec':
+            finder_class = SpecFinder
+        elif target == 'ability':
+            finder_class = AbilityFinder
+        elif target == 'validator':
+            finder_class = ValidatorFinder
+        elif target == 'decorator':
+            finder_class = DecoratorFinder
+        elif target == 'mailer':
+            finder_class = MailerFinder
+        elif target == 'asset':
+            finder_class = AssetFinder
+        elif target == 'service':
+            finder_class = ServiceFinder
+        elif target == 'form':
+            finder_class = FormFinder
+        elif target == 'serializer':
+            finder_class = SerializerFinder
+        elif target == 'config':
+            finder_class = ConfigFinder
+        elif target == 'attribute':
+            finder_class = AttributeFinder
+        elif target == 'policy':
+            finder_class = PolicyFinder
+        elif target == 'loyalty':
+            finder_class = LoyaltyFinder
+        elif target == 'domain':
+            finder_class = DomainFinder
+        elif target == 'query':
+            finder_class = QueryFinder
+        elif target == 'factory':
+            finder_class = FactoryFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)

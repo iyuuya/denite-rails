@@ -17,6 +17,22 @@ Denite rails:controller
 Denite rails:view
 Denite rails:helper
 Denite rails:test
+Denite rails:spec
+Denite rails:ability
+Denite rails:validator
+Denite rails:decorator
+Denite rails:mailer
+Denite rails:asset
+Denite rails:service
+Denite rails:form
+Denite rails:serializer
+Denite rails:config
+Denite rails:attribute
+Denite rails:policy
+Denite rails:loyalty
+Denite rails:domain
+Denite rails:query
+Denite rails:factory
 ```
 
 ## Keymap examples
@@ -31,6 +47,7 @@ nnoremap <silent> [rails]c :<C-u>Denite<Space>rails:controller<Return>
 nnoremap <silent> [rails]v :<C-u>Denite<Space>rails:view<Return>
 nnoremap <silent> [rails]h :<C-u>Denite<Space>rails:helper<Return>
 nnoremap <silent> [rails]r :<C-u>Denite<Space>rails:test<Return>
+nnoremap <silent> [rails]s :<C-u>Denite<Space>rails:spec<Return>
 ```
 
 ## TODO
