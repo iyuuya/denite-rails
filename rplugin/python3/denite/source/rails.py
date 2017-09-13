@@ -35,6 +35,7 @@ from policy_finder import PolicyFinder
 from loyalty_finder import LoyaltyFinder
 from domain_finder import DomainFinder
 from query_finder import QueryFinder
+from factory_finder import FactoryFinder
 
 
 class Source(Base):
@@ -125,6 +126,8 @@ class Source(Base):
             finder_class = DomainFinder
         elif target == 'query':
             finder_class = QueryFinder
+        elif target == 'factory':
+            finder_class = FactoryFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)

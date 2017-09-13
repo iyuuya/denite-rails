@@ -32,6 +32,7 @@ Denite rails:policy
 Denite rails:loyalty
 Denite rails:domain
 Denite rails:query
+Denite rails:factory
 ```
 
 ## Keymap examples
