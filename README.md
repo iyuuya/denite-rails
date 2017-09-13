@@ -31,6 +31,7 @@ Denite rails:attribute
 Denite rails:policy
 Denite rails:loyalty
 Denite rails:domain
+Denite rails:query
 ```
 
 ## Keymap examples
