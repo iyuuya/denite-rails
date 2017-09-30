@@ -33,6 +33,7 @@ Denite rails:loyalty
 Denite rails:domain
 Denite rails:query
 Denite rails:factory
+Denite rails:job
 ```
 
 ## Keymap examples

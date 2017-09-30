@@ -36,6 +36,7 @@ from loyalty_finder import LoyaltyFinder
 from domain_finder import DomainFinder
 from query_finder import QueryFinder
 from factory_finder import FactoryFinder
+from job_finder import JobFinder
 
 
 class Source(Base):
@@ -128,6 +129,8 @@ class Source(Base):
             finder_class = QueryFinder
         elif target == 'factory':
             finder_class = FactoryFinder
+        elif target == 'job':
+            finder_class = JobFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
