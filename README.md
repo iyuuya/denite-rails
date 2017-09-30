@@ -36,6 +36,7 @@ Denite rails:factory
 Denite rails:job
 Denite rails:uploader
 Denite rails:db
+Denite rails:presenter
 ```
 
 ## Keymap examples

@@ -39,6 +39,7 @@ from factory_finder import FactoryFinder
 from job_finder import JobFinder
 from uploader_finder import UploaderFinder
 from db_finder import DbFinder
+from presenter_finder import PresenterFinder
 
 
 class Source(Base):
@@ -137,6 +138,8 @@ class Source(Base):
             finder_class = UploaderFinder
         elif target == 'db':
             finder_class = DbFinder
+        elif target == 'presenter':
+            finder_class = PresenterFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
