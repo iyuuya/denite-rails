@@ -13,4 +13,5 @@ class ConfigFinder:
 
     def find_files(self):
         files = finder_utils.glob_project(self.root_path, self.GLOB_PATTERN)
+        files = [filanme for filename in files if os.path.isfile(filename)]
         return [ConfigFile(filename) for filename in files]
