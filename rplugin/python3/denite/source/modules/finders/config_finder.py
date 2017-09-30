@@ -1,5 +1,5 @@
+import os
 import finder_utils
-
 from config_file import ConfigFile
 
 
