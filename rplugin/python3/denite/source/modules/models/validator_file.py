@@ -7,6 +7,3 @@ from file_base import FileBase
 class ValidatorFile(FileBase):
     def remove_base_directory(self, filename, root_path):
         return re.sub(os.path.join(root_path, 'app/validators/'), '', filename)
-
-    def to_word(self, root_path):
-        return self.remove_base_directory(self.filepath, root_path)
