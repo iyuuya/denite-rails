@@ -35,6 +35,7 @@ Denite rails:query
 Denite rails:factory
 Denite rails:job
 Denite rails:uploader
+Denite rails:db
 ```
 
 ## Keymap examples
