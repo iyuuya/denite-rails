@@ -37,6 +37,7 @@ from domain_finder import DomainFinder
 from query_finder import QueryFinder
 from factory_finder import FactoryFinder
 from job_finder import JobFinder
+from uploader_finder import UploaderFinder
 
 
 class Source(Base):
@@ -131,6 +132,8 @@ class Source(Base):
             finder_class = FactoryFinder
         elif target == 'job':
             finder_class = JobFinder
+        elif target == 'uploader':
+            finder_class = UploaderFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
