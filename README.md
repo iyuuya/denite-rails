@@ -14,29 +14,29 @@ denite-rails also provide the below command to list specific files.
 
 
 ```
-Denite rails:model
-Denite rails:controller
-Denite rails:view
-Denite rails:helper
-Denite rails:test
-Denite rails:spec
 Denite rails:ability
-Denite rails:validator
-Denite rails:decorator
-Denite rails:mailer
 Denite rails:asset
-Denite rails:service
-Denite rails:form
-Denite rails:serializer
-Denite rails:config
 Denite rails:attribute
-Denite rails:policy
-Denite rails:loyalty
-Denite rails:domain
-Denite rails:query
-Denite rails:factory
-Denite rails:job
-Denite rails:uploader
+Denite rails:config
+Denite rails:controller
 Denite rails:db
+Denite rails:decorator
+Denite rails:domain
+Denite rails:factory
+Denite rails:form
+Denite rails:helper
+Denite rails:job
+Denite rails:loyalty
+Denite rails:mailer
+Denite rails:model
+Denite rails:policy
 Denite rails:presenter
+Denite rails:query
+Denite rails:serializer
+Denite rails:service
+Denite rails:spec
+Denite rails:test
+Denite rails:uploader
+Denite rails:validator
+Denite rails:view
 ```
