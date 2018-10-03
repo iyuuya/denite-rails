@@ -57,7 +57,9 @@ class Source(Base):
 
         cbname = self.vim.current.buffer.name
         context['__cbname'] = cbname
-        context['__root_path'] = util.path2project(self.vim, cbname, context.get('root_markers', ''))
+        context['__root_path'] = util.path2dir(context.get('path', './'))
+        # TODO: set path2project() to root_path if config.ru not found
+        # context['__root_path'] = util.path2project(self.vim, cbname, context.get('root_markers', ''))
 
     def highlight(self):
         # TODO syntax does not work as expected
