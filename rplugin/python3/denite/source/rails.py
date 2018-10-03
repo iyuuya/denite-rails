@@ -57,7 +57,7 @@ class Source(Base):
 
         cbname = self.vim.current.buffer.name
         context['__cbname'] = cbname
-        context['__root_path'] = util.path2project(self.vim, cbname, context.get('root_markers', ''))
+        context['__root_path'] = util.path2project(self.vim, cbname, context.get('root_markers', 'Gemfile,config.ru,Rakefile'))
 
     def highlight(self):
         # TODO syntax does not work as expected
