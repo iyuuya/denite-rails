@@ -31,15 +31,16 @@ from form_finder import FormFinder # noqa
 from serializer_finder import SerializerFinder # noqa
 from config_finder import ConfigFinder # noqa
 from attribute_finder import AttributeFinder # noqa
-from policy_finder import PolicyFinder
-from loyalty_finder import LoyaltyFinder
-from domain_finder import DomainFinder
-from query_finder import QueryFinder
-from factory_finder import FactoryFinder
-from job_finder import JobFinder
-from uploader_finder import UploaderFinder
-from db_finder import DbFinder
-from presenter_finder import PresenterFinder
+from policy_finder import PolicyFinder # noqa
+from loyalty_finder import LoyaltyFinder # noqa
+from domain_finder import DomainFinder # noqa
+from query_finder import QueryFinder # noqa
+from factory_finder import FactoryFinder # noqa
+from job_finder import JobFinder # noqa
+from uploader_finder import UploaderFinder # noqa
+from db_finder import DbFinder # noqa
+from presenter_finder import PresenterFinder # noqa
+from dashboard_finder import DashboardFinder # noqa
 
 
 class Source(Base):
@@ -142,6 +143,8 @@ class Source(Base):
             finder_class = DbFinder
         elif target == 'presenter':
             finder_class = PresenterFinder
+        elif target == 'dashboard':
+            finder_class = DashboardFinder
         else:
             msg = '{0} is not valid denite-rails target'.format(target)
             raise NameError(msg)
